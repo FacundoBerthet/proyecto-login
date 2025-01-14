@@ -1,0 +1,25 @@
+Proyecto: Formulario de Login
+
+Este proyecto es una implementación simple de un formulario de inicio de sesión con validación de datos en el cliente. 
+Además, utiliza localStorage para guardar el correo electrónico ingresado.
+
+
+Características:
+
+Validación de campos (email y contraseñas) en el lado del cliente.
+
+Mostrador y ocultador de contraseñas para mejorar la usabilidad.
+
+Mensajes de error claros y contextualizados.
+
+Almacena el email en el localStorage al completar correctamente el formulario.
+
+Diseño sencillo.
+
+Tecnologías utilizadas
+
+HTML5 para la estructura.
+
+CSS3 para el diseño y los estilos.
+
+JavaScript para la lógica del cliente y la validación.
