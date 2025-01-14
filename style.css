@@ -19,6 +19,7 @@ form{
 label{
     display: block;
     margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 input{
@@ -44,14 +45,14 @@ input[type="submit"]:hover{
 .error{
     color: red;
     font-size: 12px;
-    margin-top: -10%;
+    margin-top: -5%;
     margin-bottom: 10px;
     display: none;
 }
 
 #show-hide{
     position: relative;
-    top: -10px;
+    top: -3px;
     float: right;
     cursor: pointer;
     color: grey;
