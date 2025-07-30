@@ -1,0 +1,32 @@
+:root {
+  /* Colores principales */
+  --primary-color: rgb(42, 145, 255);
+  --primary-hover: rgb(21, 71, 124);
+  --background-color: rgb(163, 198, 205);
+  --form-background: rgb(235, 250, 252);
+  --error-color: red;
+  --text-color: #333;
+  --border-color: #ddd;
+  --shadow-color: rgb(3, 20, 76);
+  --show-hide-color: grey;
+  
+  /* Espaciado */
+  --spacing-xs: 5px;
+  --spacing-sm: 7px;
+  --spacing-md: 15px;
+  --spacing-lg: 18px;
+  --spacing-xl: 25px;
+  
+  /* Tipografía */
+  --font-family: Arial, Helvetica, sans-serif;
+  --font-size-small: 12px;
+  --font-size-base: 16px;
+  
+  /* Bordes y sombras */
+  --border-radius: 8px;
+  --border-radius-sm: 5px;
+  --box-shadow: 1px 1px 10px var(--shadow-color);
+  
+  /* Transiciones */
+  --transition-base: all 0.5s ease;
+}

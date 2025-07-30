@@ -1,0 +1,23 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset para elementos específicos */
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Reset de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}

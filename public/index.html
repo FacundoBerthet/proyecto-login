@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de login seguro con validación">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- Título -->
+    <title>Login - Proyecto de Autenticación</title>
+</head>
+<body>
+    <main class="main-container">
+        <form id="loginForm" class="login-form" novalidate>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required autocomplete="email">
+                <div class="error" id="emailError" role="alert"></div>
+            </div>
+        
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <div class="password-container">
+                    <input type="password" name="password" id="password" required autocomplete="current-password">
+                    <span id="show-hide" class="show-hide">Mostrar/Ocultar</span>
+                </div>
+                <div class="error" id="passwordError" role="alert"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar contraseña:</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" required autocomplete="new-password">
+                <div class="error" id="confirmPasswordError" role="alert"></div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Iniciar Sesión" class="btn btn-primary">
+            </div>
+
+        </form>
+    </main>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="../src/js/main.js"></script>
+</body>
+</html>

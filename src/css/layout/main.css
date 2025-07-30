@@ -1,0 +1,13 @@
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--spacing-md);
+}

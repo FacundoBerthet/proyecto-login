@@ -1,0 +1,22 @@
+.login-form {
+  background-color: var(--form-background);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+}
+
+.form-group:first-child label {
+  margin-top: 0;
+}

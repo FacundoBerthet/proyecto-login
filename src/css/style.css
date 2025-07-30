@@ -1,0 +1,232 @@
+/* =============================================================================
+   RESET Y VARIABLES BASE
+   ============================================================================= */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset para elementos específicos */
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Reset de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Variables CSS */
+:root {
+  /* Colores principales */
+  --primary-color: rgb(42, 145, 255);
+  --primary-hover: rgb(21, 71, 124);
+  --background-color: rgb(163, 198, 205);
+  --form-background: rgb(235, 250, 252);
+  --error-color: red;
+  --text-color: #333;
+  --border-color: #ddd;
+  --shadow-color: rgb(3, 20, 76);
+  --show-hide-color: grey;
+  
+  /* Espaciado */
+  --spacing-xs: 5px;
+  --spacing-sm: 7px;
+  --spacing-md: 15px;
+  --spacing-lg: 18px;
+  --spacing-xl: 25px;
+  
+  /* Tipografía */
+  --font-family: Arial, Helvetica, sans-serif;
+  --font-size-small: 12px;
+  --font-size-base: 16px;
+  
+  /* Bordes y sombras */
+  --border-radius: 8px;
+  --border-radius-sm: 5px;
+  --box-shadow: 1px 1px 10px var(--shadow-color);
+  
+  /* Transiciones */
+  --transition-base: all 0.5s ease;
+}
+
+/* =============================================================================
+   TIPOGRAFÍA
+   ============================================================================= */
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+label {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.error {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+}
+
+/* =============================================================================
+   LAYOUT
+   ============================================================================= */
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--spacing-md);
+}
+
+/* =============================================================================
+   COMPONENTES - FORMULARIO
+   ============================================================================= */
+
+.login-form {
+  background-color: var(--form-background);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+}
+
+.form-group:first-child label {
+  margin-top: 0;
+}
+
+/* =============================================================================
+   COMPONENTES - INPUTS
+   ============================================================================= */
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-base);
+  transition: var(--transition-base);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(42, 145, 255, 0.3);
+}
+
+.password-container {
+  position: relative;
+}
+
+.show-hide {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-md);
+  cursor: pointer;
+  color: var(--show-hide-color);
+  border: 1px solid transparent;
+  transition: var(--transition-base);
+  user-select: none;
+  font-size: 14px;
+}
+
+.show-hide:hover {
+  border-bottom: 1px solid var(--show-hide-color);
+}
+
+/* =============================================================================
+   COMPONENTES - BOTONES
+   ============================================================================= */
+
+.btn {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: var(--transition-base);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: var(--transition-base);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
+
+input[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+/* =============================================================================
+   COMPONENTES - ERRORES
+   ============================================================================= */
+
+.error {
+  color: var(--error-color);
+  font-size: var(--font-size-small);
+  margin-top: -5%;
+  margin-bottom: 10px;
+  display: none;
+}

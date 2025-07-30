@@ -1,0 +1,16 @@
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+label {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.error {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+}

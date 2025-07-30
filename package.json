@@ -1,0 +1,40 @@
+{
+  "name": "proyecto-login",
+  "version": "2.0.0",
+  "description": "Formulario de login moderno con validación del lado del cliente",
+  "main": "src/js/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx live-server public/",
+    "build": "echo 'Build process - configurar con herramientas como Vite o Webpack'",
+    "test": "echo 'Tests - configurar con Jest'",
+    "lint": "echo 'Linting - configurar con ESLint'",
+    "format": "echo 'Formatting - configurar con Prettier'"
+  },
+  "keywords": [
+    "javascript",
+    "login",
+    "form",
+    "validation",
+    "vanilla-js",
+    "modular",
+    "css-variables",
+    "frontend"
+  ],
+  "author": "Facundo Berthet",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FacundoBerthet/proyecto-login.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FacundoBerthet/proyecto-login/issues"
+  },
+  "homepage": "https://github.com/FacundoBerthet/proyecto-login#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

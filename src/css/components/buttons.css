@@ -1,0 +1,44 @@
+.btn {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: var(--transition-base);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: var(--transition-base);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
+
+input[type="submit"]:active {
+  transform: translateY(1px);
+}

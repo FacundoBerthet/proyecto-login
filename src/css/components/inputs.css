@@ -1,0 +1,39 @@
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-base);
+  transition: var(--transition-base);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(42, 145, 255, 0.3);
+}
+
+.password-container {
+  position: relative;
+}
+
+.show-hide {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-md);
+  cursor: pointer;
+  color: var(--show-hide-color);
+  border: 1px solid transparent;
+  transition: var(--transition-base);
+  user-select: none;
+  font-size: 14px;
+}
+
+.show-hide:hover {
+  border-bottom: 1px solid var(--show-hide-color);
+}
