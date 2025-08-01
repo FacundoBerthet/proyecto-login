@@ -1,39 +1,77 @@
-# Proyecto Login
+# 🚀 Proyecto Login Full-Stack
 
-Formulario de inicio de sesión moderno con validación del lado del cliente, construido con JavaScript vanilla modular y CSS organizado.
+Sistema de autenticación completo para aprender **Spring Boot**, **Angular** y **SQL** a través de un proyecto práctico.
 
-## ¿Qué hace?
+## 🎯 ¿Qué es?
 
-Un formulario de login que valida email y contraseñas en tiempo real, guarda los datos en localStorage y proporciona feedback visual claro al usuario.
+Un proyecto educativo que evoluciona desde un simple formulario frontend hasta una aplicación full-stack completa, perfecto para aprender tecnologías modernas paso a paso.
 
-## Características
+## 🏗️ Arquitectura
 
-- **Validación en tiempo real** de email y contraseñas
-- **Mostrar/ocultar contraseñas** 
-- **Mensajes de error claros** 
-- **Almacenamiento local** de datos del usuario
-- **Diseño responsivo** 
-- **Código modular** fácil de mantener
+### 📱 Frontend (En progreso)
+- **Vanilla JS** → **Angular** (migración planificada)
+- Validación en tiempo real
+- Diseño responsivo y moderno
+- Guards y interceptors para JWT
 
-## Tecnologías
+### 🍃 Backend (En desarrollo) 
+- **Spring Boot 3.x** - API REST
+- **Spring Security** - JWT Authentication
+- **Spring Data JPA** - ORM con Hibernate
+- **MySQL/PostgreSQL** - Base de datos
 
-- HTML5 
-- CSS3 
-- JavaScript 
-- LocalStorage para persistencia
+### 🗄️ Base de Datos
+- Diseño relacional con usuarios, roles y permisos
+- Migraciones con Flyway
+- Stored procedures (opcional)
 
-## 📁 Estructura
+## 🛠️ Tecnologías de Aprendizaje
+
+### Backend
+- Java 17+, Spring Boot, Spring Security
+- JPA/Hibernate, Maven, JWT
+- Testing con JUnit y Mockito
+
+### Frontend (Actual)
+- HTML5, CSS3, JavaScript ES6+
+- Módulos, LocalStorage, Validaciones
+
+### Frontend (Futuro)
+- Angular 17+, TypeScript, RxJS
+- Angular Material, Guards, Interceptors
+
+## 📁 Nueva Estructura
 
 ```
 proyecto-login/
-├── src/
-│   ├── js/          # JavaScript modular
-│   └── css/         # CSS organizado
+├── frontend/            # Cliente Angular (futuro)
+├── backend/            # API Spring Boot 🍃
+│   ├── src/main/java/
+│   ├── src/main/resources/
+│   └── pom.xml
+├── database/           # Scripts SQL y migraciones
+├── docs/              # Documentación del proyecto
+│   └── BACKEND_ROADMAP.md
+├── src/               # Frontend actual (Vanilla JS)
+│   ├── js/           # JavaScript modular
+│   └── css/          # CSS organizado  
 ├── public/
-│   └── index.html   # Página principal
-├── config/          # Configuraciones
-└── tests/           # Pruebas (preparado)
+│   └── index.html    # Página principal actual
+└── config/           # Configuraciones
 ```
+
+## 🎓 Hoja de Ruta de Aprendizaje
+
+### 🔄 Estado Actual: Backend Development
+- ✅ Setup inicial y planificación
+- 🔄 **Fase 1**: Configuración Spring Boot
+- ⏳ Fase 2: Modelado JPA
+- ⏳ Fase 3: API REST
+- ⏳ Fase 4: Autenticación JWT
+- ⏳ Fase 5: Autorización y roles
+- ⏳ Fase 6: Testing y documentación
+
+👉 **Consulta el [roadmap detallado](docs/BACKEND_ROADMAP.md)** para seguir el progreso
 
 ## 🎯 Cómo usar
 
